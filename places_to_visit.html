@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabini - Places to Visit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="landing-page.html" class="logo"><img src="images/mabini_logo.png" alt="Logo" class="logo-icon">
+                Mabini </a>
+            
+            <ul class="nav-menu">
+                <li><a href="landing-page.html">Homepage</a></li>
+                <li><a href="places_to_visit.html" class="active">Places to Visit</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="location">Mabini, Batangas</div>
+                <button class="register-btn">Sign Up</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="landing-page.html">Homepage</a>
+                <a href="places_to_visit.html" class="active">Places to Visit</a>
+                <a href="#">Resorts</a>
+                <a href="#">All in One</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel-container" id="carouselContainer">
+        <!-- Slides will be dynamically generated -->
+        
+        <div class="navigation">
+            <button class="nav-btn" id="prevBtn">‹</button>
+            <div class="dots-container" id="dotsContainer"></div>
+            <button class="nav-btn" id="nextBtn">›</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
