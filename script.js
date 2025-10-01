@@ -27,9 +27,9 @@
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.2)';
+                navbar.style.top = "-100px";
             } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.15)';
+                navbar.style.top = "20px";
             }
         });
 
@@ -126,6 +126,12 @@
             image: "images/eagle1.png",
             description: "Escape to Eagle Point Beach and Dive Resort in Mabini, Batangas. This charming coastal town offers pristine white sand beaches and excellent diving conditions.",
             highlights: ["White Sand Beaches", "Diving Resort", "Marine Sanctuary", "Water Sports"]
+        },
+        {
+            name: "Mt. Gulugod Baboy",
+            image: "images/gulugod.jpeg",
+            description: "Hike to the summit of Mt. Gulugod Baboy in Mabini, Batangas for panoramic views of the surrounding Batangas Bay. A must-visit for nature lovers.",
+            highlights: ["Hiking Trails", "Panoramic Views", "Nature Spot", "Island Views"]
         }
     ];
 
@@ -258,8 +264,47 @@
         }
     }
 
+    // Search functionality
+    function initializeSearch() {
+        const searchInput = document.querySelector('.search-input');
+        const searchBtn = document.querySelector('.search-btn');
+        
+        if (searchInput && searchBtn) {
+            searchBtn.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        }
+    }
+
+    function performSearch() {
+        const searchInput = document.querySelector('.search-input');
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        
+        if (searchTerm) {
+            // Redirect to appropriate page based on search term
+            if (searchTerm.includes('diving') || searchTerm.includes('dive') || searchTerm.includes('anilao')) {
+                window.location.href = 'things-to-do.html#diving';
+            } else if (searchTerm.includes('hiking') || searchTerm.includes('hike') || searchTerm.includes('gulugod')) {
+                window.location.href = 'things-to-do.html#hiking';
+            } else if (searchTerm.includes('island') || searchTerm.includes('hopping')) {
+                window.location.href = 'things-to-do.html#island-hopping';
+            } else if (searchTerm.includes('resort') || searchTerm.includes('hotel') || searchTerm.includes('accommodation')) {
+                window.location.href = 'landing-page.html#resorts';
+            } else if (searchTerm.includes('overview') || searchTerm.includes('about') || searchTerm.includes('info')) {
+                window.location.href = 'destination-overview.html';
+            } else {
+                // Default to places to visit
+                window.location.href = 'places_to_visit.html';
+            }
+        }
+    }
+
     // Initialize
     document.addEventListener('DOMContentLoaded', () => {
         createSlides();
         startAutoPlay();
+        initializeSearch();
     });

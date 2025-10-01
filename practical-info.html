@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Information - Mabini, Batangas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="practical-info.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="landing-page.html" class="logo"><img src="images/mabini_logo.png" alt="Logo" class="logo-icon">
+                Mabini </a>
+            
+            <ul class="nav-menu">
+                <li><a href="landing-page.html">Home</a></li>
+                <li><a href="places_to_visit.html">Places to Visit</a></li>
+                <li><a href="destination-overview.html">Overview</a></li>
+                <li><a href="things-to-do.html">Things to Do</a></li>
+                <li><a href="practical-info.html" class="active">Info</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="location">Mabini, Batangas</div>
+                <button class="register-btn">Sign Up</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="landing-page.html">Home</a>
+                <a href="places_to_visit.html">Places to Visit</a>
+                <a href="destination-overview.html">Overview</a>
+                <a href="things-to-do.html">Things to Do</a>
+                <a href="practical-info.html" class="active">Info</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="info-hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Practical Information</h1>
+                <p class="hero-subtitle">Everything you need to know for your visit to Mabini</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currency & Language Section -->
+    <section class="currency-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">💰</div>
+                    <div class="info-content">
+                        <h3>Currency</h3>
+                        <p>Philippine Peso (₱)</p>
+                        <div class="info-details">
+                            <div class="detail-item">
+                                <span class="detail-label">ATM Availability:</span>
+                                <span class="detail-value">Available in Batangas City</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Credit Cards:</span>
+                                <span class="detail-value">Accepted at most resorts</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Cash:</span>
+                                <span class="detail-value">Recommended for local vendors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🗣️</div>
+                    <div class="info-content">
+                        <h3>Language</h3>
+                        <p>Filipino, English widely spoken</p>
+                        <div class="info-details">
+                            <div class="detail-item">
+                                <span class="detail-label">English:</span>
+                                <span class="detail-value">Widely understood</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Filipino:</span>
+                                <span class="detail-value">Local language</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Diving Terms:</span>
+                                <span class="detail-value">English standard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customs & Culture Section -->
+    <section class="customs-section">
+        <div class="container">
+            <h2 class="section-title">Local Customs & Culture</h2>
+            <div class="customs-grid">
+                <div class="customs-card">
+                    <div class="customs-icon">🌊</div>
+                    <div class="customs-content">
+                        <h3>Marine Conservation</h3>
+                        <ul>
+                            <li>Respect marine life and coral reefs</li>
+                            <li>No touching or collecting marine specimens</li>
+                            <li>Use reef-safe sunscreen</li>
+                            <li>Follow responsible diving practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="customs-card">
+                    <div class="customs-icon">🏘️</div>
+                    <div class="customs-content">
+                        <h3>Local Communities</h3>
+                        <ul>
+                            <li>Respect fishing communities and their livelihood</li>
+                            <li>Support local businesses and artisans</li>
+                            <li>Ask permission before taking photos of locals</li>
+                            <li>Learn basic Filipino greetings</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="customs-card">
+                    <div class="customs-icon">♻️</div>
+                    <div class="customs-content">
+                        <h3>Eco-Tourism Guidelines</h3>
+                        <ul>
+                            <li>Practice "Leave No Trace" principles</li>
+                            <li>Minimize plastic waste</li>
+                            <li>Support eco-friendly resorts</li>
+                            <li>Participate in conservation activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Health Section -->
+    <section class="safety-section">
+        <div class="container">
+            <h2 class="section-title">Safety & Health</h2>
+            <div class="safety-grid">
+                <div class="safety-card">
+                    <div class="safety-header">
+                        <div class="safety-icon">🏥</div>
+                        <h3>Medical Facilities</h3>
+                    </div>
+                    <div class="safety-content">
+                        <div class="facility-item">
+                            <h4>Batangas City Medical Center</h4>
+                            <p>Nearest major hospital (30-45 minutes from Mabini)</p>
+                            <div class="contact-info">
+                                <span class="contact-label">Emergency:</span>
+                                <span class="contact-value">(043) 723-1234</span>
+                            </div>
+                        </div>
+                        <div class="facility-item">
+                            <h4>Local Health Centers</h4>
+                            <p>Basic medical care available in Mabini</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="safety-card">
+                    <div class="safety-header">
+                        <div class="safety-icon">🚨</div>
+                        <h3>Emergency Contacts</h3>
+                    </div>
+                    <div class="safety-content">
+                        <div class="emergency-item">
+                            <span class="emergency-label">Police:</span>
+                            <span class="emergency-number">117</span>
+                        </div>
+                        <div class="emergency-item">
+                            <span class="emergency-label">Fire:</span>
+                            <span class="emergency-number">116</span>
+                        </div>
+                        <div class="emergency-item">
+                            <span class="emergency-label">Coast Guard:</span>
+                            <span class="emergency-number">(043) 723-4567</span>
+                        </div>
+                        <div class="emergency-item">
+                            <span class="emergency-label">Tourist Hotline:</span>
+                            <span class="emergency-number">(02) 524-2384</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="safety-card">
+                    <div class="safety-header">
+                        <div class="safety-icon">🏥</div>
+                        <h3>Health Tips</h3>
+                    </div>
+                    <div class="safety-content">
+                        <ul class="health-tips">
+                            <li>Stay hydrated, especially during outdoor activities</li>
+                            <li>Use sun protection (SPF 30+)</li>
+                            <li>Bring insect repellent for evening activities</li>
+                            <li>Check weather conditions before diving/hiking</li>
+                            <li>Inform someone of your itinerary</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility Section -->
+    <section class="accessibility-section">
+        <div class="container">
+            <h2 class="section-title">Accessibility</h2>
+            <div class="accessibility-content">
+                <div class="accessibility-info">
+                    <div class="accessibility-card">
+                        <div class="accessibility-icon">♿</div>
+                        <div class="accessibility-details">
+                            <h3>Wheelchair Access</h3>
+                            <p>Most resorts have wheelchair-accessible facilities. Please contact resorts in advance to confirm specific accessibility needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="accessibility-card">
+                        <div class="accessibility-icon">🚤</div>
+                        <div class="accessibility-details">
+                            <h3>Boat Access</h3>
+                            <p>Some dive sites and islands require boat transfers. Most boats can accommodate mobility aids with advance notice.</p>
+                        </div>
+                    </div>
+
+                    <div class="accessibility-card">
+                        <div class="accessibility-icon">🏨</div>
+                        <div class="accessibility-details">
+                            <h3>Resort Facilities</h3>
+                            <p>Many resorts offer accessible rooms and facilities. Contact your chosen resort for specific accessibility features.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessibility-tips">
+                    <h3>Accessibility Tips</h3>
+                    <ul>
+                        <li>Contact resorts in advance for accessibility needs</li>
+                        <li>Some hiking trails may not be wheelchair accessible</li>
+                        <li>Diving activities may have physical requirements</li>
+                        <li>Local transport (tricycles) may have limited accessibility</li>
+                        <li>Consider bringing a companion for assistance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather & Best Time Section -->
+    <section class="weather-section">
+        <div class="container">
+            <h2 class="section-title">Weather & Best Time to Visit</h2>
+            <div class="weather-content">
+                <div class="weather-cards">
+                    <div class="weather-card best">
+                        <div class="weather-header">
+                            <div class="weather-icon">☀️</div>
+                            <h3>Dry Season (Nov-May)</h3>
+                        </div>
+                        <div class="weather-details">
+                            <p><strong>Best for:</strong> Diving, hiking, all outdoor activities</p>
+                            <p><strong>Water visibility:</strong> Excellent (20-30m)</p>
+                            <p><strong>Temperature:</strong> 25-32°C</p>
+                            <p><strong>Rainfall:</strong> Minimal</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-card avoid">
+                        <div class="weather-header">
+                            <div class="weather-icon">🌧️</div>
+                            <h3>Rainy Season (Aug-Oct)</h3>
+                        </div>
+                        <div class="weather-details">
+                            <p><strong>Conditions:</strong> Heavy rainfall, rough seas</p>
+                            <p><strong>Water visibility:</strong> Poor (5-10m)</p>
+                            <p><strong>Temperature:</strong> 24-30°C</p>
+                            <p><strong>Rainfall:</strong> Heavy, frequent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weather-widget">
+                    <h3>Current Conditions</h3>
+                    <div class="current-weather">
+                        <div class="weather-icon-large">🌊</div>
+                        <div class="weather-info">
+                            <p><strong>Water Visibility:</strong> Excellent</p>
+                            <p><strong>Dive Conditions:</strong> Perfect</p>
+                            <p><strong>Recommended Activities:</strong> All outdoor activities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

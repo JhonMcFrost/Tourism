@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabini, Batangas - Destination Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="landing-page.html" class="logo"><img src="images/mabini_logo.png" alt="Logo" class="logo-icon">
+                Mabini </a>
+            
+            <ul class="nav-menu">
+                <li><a href="landing-page.html">Home</a></li>
+                <li><a href="places_to_visit.html">Places to Visit</a></li>
+                <li><a href="destination-overview.html" class="active">Overview</a></li>
+                <li><a href="things-to-do.html">Things to Do</a></li>
+                <li><a href="practical-info.html">Info</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="location">Mabini, Batangas</div>
+                <button class="register-btn">Sign Up</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="landing-page.html">Home</a>
+                <a href="places_to_visit.html">Places to Visit</a>
+                <a href="destination-overview.html" class="active">Overview</a>
+                <a href="things-to-do.html">Things to Do</a>
+                <a href="practical-info.html">Info</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="destination-hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Mabini, Batangas</h1>
+                <p class="hero-subtitle">The Birthplace of Philippine Scuba Diving</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview-section">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>About Mabini</h2>
+                    <p>Mabini is a coastal municipality on the Calumpan Peninsula, located 2–3 hours from Manila. Known for its marine biodiversity, it's the birthplace of scuba diving in the Philippines. Experience a perfect mix of adventure and relaxation with diving, hiking, island-hopping, and resort escapes.</p>
+                    
+                    <div class="key-facts">
+                        <div class="fact-item">
+                            <div class="fact-icon">🌊</div>
+                            <div class="fact-content">
+                                <h3>Marine Biodiversity</h3>
+                                <p>Home to vibrant coral reefs and diverse marine life</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-icon">🤿</div>
+                            <div class="fact-content">
+                                <h3>Diving Capital</h3>
+                                <p>Birthplace of scuba diving in the Philippines</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <div class="fact-icon">🏔️</div>
+                            <div class="fact-content">
+                                <h3>Mountain Views</h3>
+                                <p>Panoramic views from Mt. Gulugod-Baboy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-image">
+                    <img src="images/backg.jpg" alt="Mabini Landscape">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Attractions -->
+    <section class="attractions-section">
+        <div class="container">
+            <h2 class="section-title">Top Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/diving.jpg" alt="Anilao Diving">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Anilao</h3>
+                        <p>World-class diving and snorkeling with pristine coral reefs. Perfect for both beginners and experienced divers.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Diving</span>
+                            <span class="tag">Snorkeling</span>
+                            <span class="tag">Marine Life</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/gulugod.jpeg" alt="Mt. Gulugod-Baboy">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Mt. Gulugod-Baboy</h3>
+                        <p>Beginner-friendly hike with panoramic views of Batangas Bay and surrounding islands.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Hiking</span>
+                            <span class="tag">Views</span>
+                            <span class="tag">Nature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/camp.png" alt="Sombrero Island">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Sombrero Island</h3>
+                        <p>Small island shaped like a hat, perfect for day trips and island hopping adventures.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Island Hopping</span>
+                            <span class="tag">Beach</span>
+                            <span class="tag">Day Trip</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <img src="images/swimming.jpg" alt="Maricaban Island">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>Maricaban Island</h3>
+                        <p>Clear waters perfect for snorkeling and island hopping with pristine beaches.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Clear Waters</span>
+                            <span class="tag">Snorkeling</span>
+                            <span class="tag">Island Hopping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities & Experiences -->
+    <section class="activities-section">
+        <div class="container">
+            <h2 class="section-title">Activities & Experiences</h2>
+            <div class="activities-grid">
+                <div class="activity-category">
+                    <div class="category-header">
+                        <div class="category-icon">🏃‍♂️</div>
+                        <h3>Adventure & Outdoor</h3>
+                    </div>
+                    <ul class="activity-list">
+                        <li>Dive Anilao (macro diving, coral gardens)</li>
+                        <li>Hike Mt. Gulugod-Baboy</li>
+                        <li>Island-hopping tours (Sombrero, Maricaban)</li>
+                        <li>Snorkeling in crystal-clear waters</li>
+                    </ul>
+                </div>
+
+                <div class="activity-category">
+                    <div class="category-header">
+                        <div class="category-icon">🍽️</div>
+                        <h3>Food & Drink</h3>
+                    </div>
+                    <ul class="activity-list">
+                        <li>Fresh seafood restaurants in Anilao</li>
+                        <li>Try Batangas specialties: Bulalo, Goto Batangas</li>
+                        <li>Local fishing community experiences</li>
+                        <li>Beachside dining with ocean views</li>
+                    </ul>
+                </div>
+
+                <div class="activity-category">
+                    <div class="category-header">
+                        <div class="category-icon">🧘‍♀️</div>
+                        <h3>Relaxation</h3>
+                    </div>
+                    <ul class="activity-list">
+                        <li>Spa and wellness resorts</li>
+                        <li>Sunset viewing at coastal resorts</li>
+                        <li>Beach lounging and swimming</li>
+                        <li>Eco-tourism community visits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Best Time to Visit Section -->
+    <section class="map-timing-section">
+        <div class="container">
+            <h2 class="section-title">Explore Mabini & Best Time to Visit</h2>
+            <div class="map-timing-content">
+
+                <!-- Interactive Map - Center -->
+                <div class="map-container">
+                    <h3>Interactive Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62013.636895941505!2d120.91757215!3d13.72739025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0747a21db82d%3A0x6987772247cd8444!2sMabini%2C%20Batangas!5e0!3m2!1sen!2sph!4v1759208927590!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Best Time to Visit - Right Side -->
+                <div class="timing-info">
+                    <h3>Best Time to Visit</h3>
+                    <div class="season-info">
+                        <div class="season-item best">
+                            <div class="season-icon">☀️</div>
+                            <div class="season-content">
+                                <h4>Dry Season (Nov–May)</h4>
+                                <p>Best for diving with clear water visibility. Perfect weather for all outdoor activities.</p>
+                            </div>
+                        </div>
+                        <div class="season-item avoid">
+                            <div class="season-icon">🌧️</div>
+                            <div class="season-content">
+                                <h4>Rainy Season (Aug–Oct)</h4>
+                                <p>Avoid peak rainy season for better diving conditions and outdoor activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

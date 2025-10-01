@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to Do in Mabini, Batangas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="things-to-do.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="landing-page.html" class="logo"><img src="images/mabini_logo.png" alt="Logo" class="logo-icon">
+                Mabini </a>
+            
+            <ul class="nav-menu">
+                <li><a href="landing-page.html">Home</a></li>
+                <li><a href="places_to_visit.html">Places to Visit</a></li>
+                <li><a href="destination-overview.html">Overview</a></li>
+                <li><a href="things-to-do.html" class="active">Things to Do</a></li>
+                <li><a href="practical-info.html">Info</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="location">Mabini, Batangas</div>
+                <button class="register-btn">Sign Up</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="landing-page.html">Home</a>
+                <a href="places_to_visit.html">Places to Visit</a>
+                <a href="destination-overview.html">Overview</a>
+                <a href="things-to-do.html" class="active">Things to Do</a>
+                <a href="practical-info.html">Info</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="things-hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Things to Do in Mabini</h1>
+                <p class="hero-subtitle">Adventure, Relaxation, and Unforgettable Experiences</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure & Outdoor Section -->
+    <section class="adventure-section">
+        <div class="container">
+            <h2 class="section-title">Adventure & Outdoor</h2>
+            <div class="activities-grid">
+                <div class="activity-card featured">
+                    <div class="activity-image">
+                        <img src="images/diving.jpg" alt="Diving in Anilao">
+                        <div class="activity-badge">Most Popular</div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Dive Anilao</h3>
+                        <p>Experience world-class macro diving and explore vibrant coral gardens. Perfect for both beginners and experienced divers.</p>
+                        <div class="activity-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⏱️</span>
+                                <span>Half Day - Full Day</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span>₱2,500 - ₱5,000</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">⭐</span>
+                                <span>4.8/5 Rating</span>
+                            </div>
+                        </div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="images/gulugod.jpeg" alt="Hiking Mt. Gulugod-Baboy">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Hike Mt. Gulugod-Baboy</h3>
+                        <p>Beginner-friendly hike with panoramic views of Batangas Bay and surrounding islands.</p>
+                        <div class="activity-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⏱️</span>
+                                <span>3-4 Hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span>₱500 - ₱1,000</span>
+                            </div>
+                        </div>
+                        <button class="book-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="images/swimming.jpg" alt="Island Hopping">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Island Hopping Tours</h3>
+                        <p>Explore Sombrero Island and Maricaban Island with crystal-clear waters and pristine beaches.</p>
+                        <div class="activity-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⏱️</span>
+                                <span>Full Day</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span>₱1,500 - ₱3,000</span>
+                            </div>
+                        </div>
+                        <button class="book-btn">Book Tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food & Drink Section -->
+    <section class="food-section">
+        <div class="container">
+            <h2 class="section-title">Food & Drink</h2>
+            <div class="food-grid">
+                <div class="food-category">
+                    <div class="category-header">
+                        <div class="category-icon">🦐</div>
+                        <h3>Fresh Seafood</h3>
+                    </div>
+                    <div class="food-items">
+                        <div class="food-item">
+                            <h4>Anilao Seafood Restaurants</h4>
+                            <p>Fresh catch of the day prepared in traditional Filipino style</p>
+                            <div class="food-tags">
+                                <span class="tag">Local Cuisine</span>
+                                <span class="tag">Fresh Catch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-category">
+                    <div class="category-header">
+                        <div class="category-icon">🍲</div>
+                        <h3>Batangas Specialties</h3>
+                    </div>
+                    <div class="food-items">
+                        <div class="food-item">
+                            <h4>Bulalo</h4>
+                            <p>Rich beef bone marrow soup, a Batangas classic</p>
+                        </div>
+                        <div class="food-item">
+                            <h4>Goto Batangas</h4>
+                            <p>Traditional rice porridge with beef tripe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-category">
+                    <div class="category-header">
+                        <div class="category-icon">🌅</div>
+                        <h3>Beachside Dining</h3>
+                    </div>
+                    <div class="food-items">
+                        <div class="food-item">
+                            <h4>Sunset Restaurants</h4>
+                            <p>Dine with stunning ocean views and fresh sea breeze</p>
+                            <div class="food-tags">
+                                <span class="tag">Ocean Views</span>
+                                <span class="tag">Romantic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Relaxation Section -->
+    <section class="relaxation-section">
+        <div class="container">
+            <h2 class="section-title">Relaxation & Wellness</h2>
+            <div class="relaxation-grid">
+                <div class="relaxation-card">
+                    <div class="relaxation-image">
+                        <img src="images/camp.png" alt="Spa and Wellness">
+                    </div>
+                    <div class="relaxation-content">
+                        <h3>Spa & Wellness Resorts</h3>
+                        <p>Rejuvenate with traditional Filipino spa treatments and modern wellness facilities.</p>
+                        <div class="wellness-features">
+                            <span class="feature">🧘‍♀️ Yoga Classes</span>
+                            <span class="feature">💆‍♀️ Massage Therapy</span>
+                            <span class="feature">🌿 Natural Treatments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relaxation-card">
+                    <div class="relaxation-image">
+                        <img src="images/swimming.jpg" alt="Beach Relaxation">
+                    </div>
+                    <div class="relaxation-content">
+                        <h3>Beach Lounging</h3>
+                        <p>Unwind on pristine white sand beaches with crystal-clear waters.</p>
+                        <div class="wellness-features">
+                            <span class="feature">🏖️ Private Beaches</span>
+                            <span class="feature">☀️ Sunbathing</span>
+                            <span class="feature">🏊‍♀️ Swimming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relaxation-card">
+                    <div class="relaxation-image">
+                        <img src="images/backg.jpg" alt="Sunset Viewing">
+                    </div>
+                    <div class="relaxation-content">
+                        <h3>Sunset Viewing</h3>
+                        <p>Witness breathtaking sunsets from coastal resorts and mountain viewpoints.</p>
+                        <div class="wellness-features">
+                            <span class="feature">🌅 Sunset Spots</span>
+                            <span class="feature">📸 Photography</span>
+                            <span class="feature">🍹 Cocktails</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Visitors Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Amazing diving experience! The coral reefs are absolutely stunning. The resort staff was incredibly helpful and knowledgeable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Diving Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Perfect weekend getaway! The hike to Mt. Gulugod-Baboy was challenging but the view was worth every step. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <span>Adventure Seeker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"The island hopping tour was fantastic! Crystal clear waters and pristine beaches. Great for families and couples."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <span>Family Traveler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

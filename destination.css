@@ -1,0 +1,463 @@
+/* Destination Overview Styles */
+
+/* Hero Section */
+.destination-hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/backg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.hero-overlay .hero-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-overlay .hero-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    opacity: 0.9;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 90%;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 80px 0;
+    background: rgb(1, 1, 61);
+    color: white;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.overview-text h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.overview-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}
+
+.key-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fact-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.fact-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.fact-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.fact-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.overview-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.overview-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Attractions Section */
+.attractions-section {
+    padding: 80px 0;
+    background: rgb(1, 1, 61);
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.attraction-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.attraction-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.attraction-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover .attraction-image img {
+    transform: scale(1.05);
+}
+
+.attraction-content {
+    padding: 25px;
+}
+
+.attraction-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.attraction-content p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.attraction-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Activities Section */
+.activities-section {
+    padding: 80px 0;
+    background: rgb(1, 1, 61);
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.activity-category {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.activity-category:hover {
+    transform: translateY(-5px);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.category-icon {
+    font-size: 2rem;
+}
+
+.category-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: white;
+    position: relative;
+    padding-left: 25px;
+}
+
+.activity-list li:last-child {
+    border-bottom: none;
+}
+
+.activity-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Map & Best Time Section */
+.map-timing-section {
+    padding: 80px 0;
+    background: rgb(1, 1, 61);
+}
+
+.map-timing-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Interactive Map - Center */
+.map-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.map-container h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.map-container iframe {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Best Time to Visit - Left Side */
+.timing-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 500px;
+}
+
+.timing-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+}
+
+.season-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.season-item {
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.season-item:hover {
+    transform: translateY(-3px);
+}
+
+.season-item.best {
+    background: linear-gradient(135deg, #d5f4e6, #a8e6cf);
+    border-left: 4px solid #27ae60;
+}
+
+.season-item.avoid {
+    background: linear-gradient(135deg, #fadbd8, #f1948a);
+    border-left: 4px solid #e74c3c;
+}
+
+.season-icon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.season-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.season-content p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.season-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detail {
+    font-size: 0.85rem;
+    color: #666;
+    padding: 3px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .overview-content,
+    .timing-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-timing-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .destination-hero {
+        height: 50vh;
+        margin-top: 70px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .overview-text h2,
+    .timing-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timing-info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .destination-hero {
+        height: 40vh;
+    }
+    
+    .overview-section,
+    .attractions-section,
+    .activities-section,
+    .timing-section,
+    .map-section,
+    .map-timing-section {
+        padding: 60px 0;
+    }
+    
+    .fact-item,
+    
+    .timing-info,
+    .current-conditions {
+        padding: 20px;
+    }
+    
+    .season-item {
+        padding: 15px;
+    }
+}
