@@ -48,11 +48,100 @@
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 3rem;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .overview-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .overview-image {
+        order: -1;
+    }
+    
+    .fact-item {
+        padding: 15px;
+    }
+    
+    .attractions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .destination-hero {
+        padding: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+    
+    .overview-text h2 {
+        font-size: 2rem;
+    }
+    
+    .overview-text p {
+        font-size: 1rem;
+    }
+    
+    .fact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .container {
+        padding: 40px 20px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .attraction-card {
+        margin: 0;
+    }
+    
+    .attraction-image {
+        height: 200px;
+    }
+    
+    .attraction-content {
+        padding: 15px;
+    }
+    
+    .attraction-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .attraction-tags {
+        gap: 8px;
+    }
+    
+    .tag {
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
 }
 
 /* Overview Section */

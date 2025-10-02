@@ -54,6 +54,107 @@
     letter-spacing: 1px;
 }
 
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .relaxation-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .activity-card.featured {
+        grid-column: span 2;
+    }
+    
+    .activity-content {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .things-hero {
+        padding: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .activity-card.featured {
+        flex-direction: column;
+    }
+    
+    .activity-image {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .activity-content {
+        width: 100%;
+    }
+    
+    .activity-details {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .activities-grid,
+    .relaxation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .activity-card.featured {
+        grid-column: span 1;
+    }
+    
+    .activity-card,
+    .relaxation-card {
+        margin: 0;
+    }
+    
+    .activity-image img,
+    .relaxation-image img {
+        height: 200px;
+    }
+    
+    .activity-badge {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+    }
+    
+    .activity-details,
+    .wellness-features {
+        gap: 10px;
+    }
+    
+    .detail-item,
+    .feature {
+        font-size: 0.9rem;
+    }
+}
+
 /* Adventure Section */
 .adventure-section {
     padding: 80px 0;
